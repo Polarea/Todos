@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos - AI-Enabled E-Commerce</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .header { background: #f5f5f5; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        .status { color: green; font-weight: bold; }
+        .todo-item { background: #fff; border: 1px solid #ddd; padding: 10px; margin: 5px 0; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Todos - AI-Enabled E-Commerce Platform</h1>
+        <p class="status">✓ Monorepo with integrated observability</p>
+    </div>
+    
+    <div id="app">
+        <h2>Features:</h2>
+        <div class="todo-item">✓ Turborepo configuration with apps and packages</div>
+        <div class="todo-item">✓ Integrated Winston logging with correlation IDs</div>
+        <div class="todo-item">✓ Prometheus metrics collection</div>
+        <div class="todo-item">✓ Distributed tracing capabilities</div>
+    </div>
+
+    <script>
+        // Simple client-side logging with correlation ID
+        function logWithCorrelation(message) {
+            const correlationId = document.querySelector('meta[name="correlation-id"]')?.getAttribute('content') || 'web-' + Date.now();
+            console.log(`[${correlationId}] ${message}`);
+        }
+        
+        logWithCorrelation('Frontend application loaded');
+    </script>
+</body>
+</html>

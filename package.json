@@ -1,0 +1,32 @@
+{
+  "name": "todos",
+  "version": "1.0.0",
+  "description": "AI-Enabled E-Commerce Platform with integrated observability",
+  "private": true,
+  "packageManager": "npm@10.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "test": "turbo run test",
+    "lint": "turbo run lint"
+  },
+  "keywords": [
+    "monorepo",
+    "typescript",
+    "observability"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.2.1",
+    "jest": "^30.0.5",
+    "ts-jest": "^29.4.1",
+    "turbo": "^2.5.5",
+    "typescript": "^5.9.2"
+  }
+}
