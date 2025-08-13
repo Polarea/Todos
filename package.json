@@ -1,0 +1,23 @@
+{
+  "name": "todos-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+  "build": "turbo build",
+    "dev": "turbo run dev --parallel",
+    "test": "turbo test",
+    "lint": "turbo lint",
+    "format": "prettier -w ."
+  },
+  "devDependencies": {
+    "turbo": "^2.0.6",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4",
+    "@types/node": "^20.14.11"
+  },
+  "packageManager": "npm@10.8.2"
+}

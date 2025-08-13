@@ -1,0 +1,32 @@
+{
+  "name": "@todos/mcp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+  "dev": "cross-env SERVICE_NAME=mcp PORT=4002 tsx watch src/index.ts",
+    "start": "node dist/index.js",
+  "test": "jest --passWithNoTests --config jest.config.cjs",
+    "lint": "echo no-lint-mcp"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "@todos/shared": "*",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "@types/express": "^4.17.21",
+  "@types/cors": "^2.8.17",
+    "@types/node": "^20.14.11",
+    "tsx": "^4.15.7",
+    "cross-env": "^7.0.3",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.3",
+    "@types/jest": "^29.5.12",
+    "supertest": "^7.0.0",
+    "@types/supertest": "^2.0.16"
+  }
+}

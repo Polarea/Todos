@@ -1,0 +1,13 @@
+
+> @todos/shared@0.1.0 build
+> tsc -p tsconfig.build.json
+
+src/__tests__/logger.test.ts(4,70): error TS1005: ',' expected.
+src/__tests__/logger.test.ts(4,73): error TS1005: ',' expected.
+npm error Lifecycle script `build` failed with error:
+npm error code 2
+npm error path N:\Todos\packages\shared
+npm error workspace @todos/shared@0.1.0
+npm error location N:\Todos\packages\shared
+npm error command failed
+npm error command C:\WINDOWS\system32\cmd.exe /d /s /c tsc -p tsconfig.build.json
