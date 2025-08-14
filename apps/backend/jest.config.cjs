@@ -4,12 +4,8 @@ module.exports = {
   testEnvironment: 'node',
   roots: ['<rootDir>/src'],
   moduleFileExtensions: ['ts', 'js'],
-  moduleNameMapper: {},
-  globals: {
-    'ts-jest': {
-  tsconfig: { module: 'CommonJS', moduleResolution: 'node' },
-      useESM: false,
-    },
+  transform: {
+    '^.+\\.(ts|tsx)$': ['ts-jest', { tsconfig: { module: 'CommonJS', moduleResolution: 'node' }, useESM: false }],
   },
   moduleNameMapper: {
     '^@todos/shared$': '<rootDir>/../../packages/shared/src/index.ts',

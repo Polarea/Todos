@@ -4,5 +4,8 @@
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true
-  }
+  },
+  "exclude": [
+    "src/__tests__/**"
+  ]
 }

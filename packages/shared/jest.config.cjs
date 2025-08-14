@@ -4,10 +4,8 @@ module.exports = {
   testEnvironment: 'node',
   roots: ['<rootDir>/src'],
   moduleFileExtensions: ['ts', 'js'],
-  globals: {
-    'ts-jest': {
-      tsconfig: { module: 'CommonJS' },
-      useESM: false,
-    },
+  transform: {
+    '^.+\\.(ts|tsx)$': ['ts-jest', { tsconfig: { module: 'CommonJS' }, useESM: false }],
   },
+  testMatch: ['**/__tests__/**/*.test.ts'],
 };
